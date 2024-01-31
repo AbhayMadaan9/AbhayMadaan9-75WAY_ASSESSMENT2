@@ -1,0 +1,73 @@
+@import "../../styles/variables";
+@import "../../styles/mixin-spacing";
+
+.container--burger-button {
+  @include p(2);
+  @include ml(2);
+  top: 0.5rem;
+  @include br(6);
+  background-color: $c-white;
+  box-shadow: $c-black-35 0rem 0.25rem 0.5rem;
+  animation: $animation;
+}
+
+.burger {
+  width: 3rem;
+  height: 3rem;
+  @include my(3);
+  @include br(4);
+  background-color: $c-gray;
+  box-shadow: $c-black-15 0rem 0.25rem 0.5rem;
+  &:hover,
+  &.active {
+    transition: $transition;
+    background-color: $c-yellow;
+  }
+}
+
+.styling-panel {
+  &--container {
+    @include p(2);
+    @include ml(2);
+    top: 5rem;
+    @include br(6);
+    background-color: $c-white;
+    box-shadow: $c-black-35 0px 3px 8px;
+    animation: $animation;
+  }
+  &--option_wrapper {
+    @include m(4);
+    @include p(1);
+    border-bottom: 1px solid $c-gainsboro;
+
+    label {
+      width: 10rem;
+      @include mr(7);
+    }
+    &--range {
+      width: 100%;
+      input {
+        @include mr(5);
+        width: 100%;
+      }
+      span {
+        width: 2.5rem;
+      }
+    }
+  }
+
+  &--colors_wrapper {
+    width: 100%;
+    height: 100%;
+    &--color {
+      height: 1.5rem;
+      width: 1.5rem;
+      border: 1px solid $c-darkgray;
+      @include br(4);
+      cursor: pointer;
+      &.active {
+        border: 3px solid $c-turquoise;
+      }
+    }
+  }
+}

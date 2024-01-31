@@ -1,0 +1,47 @@
+// .canvas-container{
+//     width: 100%;
+ 
+   
+// }
+// .canvas-items{
+//     margin-left: 20rem;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: center;
+//     gap: 1rem;
+// }
+// .canvas-item{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     gap: 1rem;
+// }
+.canvas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .canvas-items {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #canvas {
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  
+  .button-container {
+    margin-top: 10px;
+  }
+  
+  .text-area-container {
+    position: fixed;
+    z-index: 1;
+  }
